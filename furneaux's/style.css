@@ -1,0 +1,286 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #48353a;
+}
+
+
+header{
+    padding: 10px 15px;
+    overflow: hidden;
+
+}
+
+
+header h1{
+    float: left;
+}
+
+
+header nav{
+    float: right;
+    margin-top: 3px;
+}
+
+
+header nav a{
+    color: #48353a;
+    text-decoration: none;
+    margin-left: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+
+
+.hero{
+    background-image: url(./assets/hero.jpg);
+    background-size: cover;
+    padding-top: 230px;
+    padding-bottom: 200px;
+    background-position: right center;
+    
+    
+}
+
+
+.hero div{
+    max-width: 475px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    text-align: center;
+}
+
+
+.hero h2{
+    font-family: 'David Libre', sans-serif;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 1;
+    margin-bottom: 15px;
+    padding-top: 162px;
+}
+
+
+.hero .paragraph{
+    max-width: 400px;
+    margin-left: 5px;
+    margin-right: auto;
+}
+
+
+.flowers{
+    overflow: hidden;
+}
+
+
+
+.flowers img{
+    float: left;
+    width: 33.3%;
+}
+
+
+
+.quotes{
+    overflow: hidden;
+}
+
+
+
+.quotes div{
+    width: 47%;
+    float: left;
+    text-align: center;
+    padding: 50px 20px 40px 20px;
+}
+
+
+.quotes .liv_background{
+    background-color: #f7f1ee;
+}
+
+
+.quotes img{
+    width: 75px;
+}
+
+
+.quotes blockquote{
+    font-family: 'David Libre', sans-serif;
+    font-size: 24px;
+    line-height: 1.15;
+    font-weight: 700;
+    max-width: 400px;
+    margin: 15px auto 5px auto;
+    
+}
+
+
+.quotes .chelsea img{
+    border-radius: 100%;
+}
+
+
+.chair{
+    background-image: url(./assets/full-bleed.jpg);
+    background-position: center bottom;
+    padding: 0;
+    height: 509px;
+}
+
+
+.logo{
+    background-color: #eeae9f;
+    padding: 20px 20px 35px 20px;
+    text-align: center;
+}
+
+
+.logo p{
+    color: white;
+    font-weight: 700;
+    margin-bottom: 11px;
+}
+
+
+.logo img{
+    margin-left: 22px;
+    margin-right: 22px;
+}
+
+
+footer{
+    background-color: #47353A;
+    color: #ccc9ca;
+    padding: 26px 31px;
+    overflow: hidden;
+}
+
+
+
+footer img{
+    float: left;
+}
+
+
+footer p{
+    float: right;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+/* responsiveness */
+@media (max-width:600px) {
+    body{
+        font-size: 14px;
+    }
+
+
+    .hero h2{
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+
+    .hero{
+        padding: 80px 0px;
+    }
+
+
+    .chair{
+        height: 313px;
+    }
+
+    .quotes div{
+        float: none;
+        width: auto;
+        padding: 30px 30px 40px 30px;
+    }
+
+    .quotes blockquote{
+        font-size: 20px;
+    }
+
+
+    .quotes p{
+        display: none;
+    }
+
+
+    header nav{
+        line-height: 24px;
+    }
+}
+
+
+@media (max-width:510px) {
+    header h1, header nav{
+        float: none;
+    }
+
+    header nav a{
+        margin-left: 0;
+        margin-right: 12px;
+    }
+
+
+    .flowers img{
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: 383px;
+        
+    }
+
+    footer{
+        padding: 30px 20px;
+    }
+}
+
+
+@media (max-width:810px) {
+    .logo img{
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+}
+
+
+
+@media (max-width:660px) {
+    .logo img{
+        margin: 0 auto 35px auto;
+        display: block;
+    }
+
+
+    .logo img:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* it gets applied to screen above 820px */
+@media (min-width:820px) {
+    header{
+        position: fixed;
+        top: 0;
+        left: 0;
+        /* margin-top: 50px; */
+        width: 98%;
+        background-color: #fff;
+        box-shadow: 0px 1px 5px 0px rgba(51, 51, 51, 0.4);
+    }
+}
